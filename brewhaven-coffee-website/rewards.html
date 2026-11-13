@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewards | Brewhaven Coffee Co. (Demo)</title>
+  <meta name="description" content="Learn how the Brewhaven Rewards demo loyalty program works: earn stars, explore reward tiers and read the FAQ.">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+
+  <!-- Google Font: Inter (free, open-source). If it can't load, Arial/Helvetica are used. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Our styles: global first, then responsive overrides -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Lets keyboard users jump straight past the navigation -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Demo notice: reminds visitors this is a student project -->
+  <div class="demo-bar">
+    Student demo project &mdash; Brewhaven Coffee Co. is a fictional brand. No real orders, payments or accounts.
+    <a href="terms.html">Learn more</a>
+  </div>
+
+  <!-- ===================== HEADER (same on every page) ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Brewhaven Coffee Co. home">
+        <img src="assets/images/logo.svg" alt="" width="50" height="50">
+      </a>
+
+      <!-- Hamburger button (visible only on small screens) -->
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="icon-open"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="icon-close" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul class="nav-links">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html" class="active" aria-current="page">Rewards</a></li>
+            <li><a href="gift-cards.html">Gift Cards</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a class="store-link" href="store-locator.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Find a store</a>
+          <div class="btn-group">
+            <a class="btn btn-dark-outline" href="sign-in.html">Sign in</a>
+            <a class="btn btn-dark" href="join-now.html">Join now</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="page-hero theme-green" aria-labelledby="rewards-title">
+      <div class="page-hero-text">
+        <span class="eyebrow">Brewhaven Rewards &middot; demo</span>
+        <h1 id="rewards-title">Free coffee is a sip away</h1>
+        <p>See how a coffee loyalty program works: earn stars with each purchase and swap them for treats. This is a demonstration &mdash; no real stars or rewards are issued.</p>
+        <div class="btn-group">
+          <a class="btn btn-light btn-lg" href="join-now.html">Join now</a>
+          <a class="btn btn-light-outline btn-lg" href="sign-in.html">Sign in</a>
+        </div>
+      </div>
+      <div class="page-hero-image">
+        <img src="assets/images/rewards.svg" alt="A takeaway coffee cup surrounded by golden stars" width="1200" height="900">
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="how-title">Getting started is easy</h2>
+          <p>Three simple steps in our sample program.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="feature">
+            <div class="step-number">1</div>
+            <h3>Create an account</h3>
+            <p>Use the <a href="join-now.html">demo sign-up form</a> to see how joining works.</p>
+          </div>
+          <div class="feature">
+            <div class="step-number">2</div>
+            <h3>Order and pay</h3>
+            <p>In a real program, every purchase would add stars to your account.</p>
+          </div>
+          <div class="feature">
+            <div class="step-number">3</div>
+            <h3>Enjoy rewards</h3>
+            <p>Swap stars for drinks, food and more using the tiers below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REWARD TIERS (tabs) -->
+    <section class="section section-cream" aria-labelledby="tiers-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="tiers-title">Get your favorites for free</h2>
+          <p>Choose a star level to see what it could unlock.</p>
+        </div>
+        <div class="star-tiers" role="tablist" aria-label="Reward levels" data-tabs>
+          <button class="tier-btn" type="button" role="tab" id="tier-tab-25" aria-controls="tier-panel-25" aria-selected="true">25<span><svg width="14" height="14" style="display:inline;vertical-align:-1px;color:#CBA258" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></span></button>
+          <button class="tier-btn" type="button" role="tab" id="tier-tab-100" aria-controls="tier-panel-100" aria-selected="false" tabindex="-1">100<span><svg width="14" height="14" style="display:inline;vertical-align:-1px;color:#CBA258" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></span></button>
+          <button class="tier-btn" type="button" role="tab" id="tier-tab-200" aria-controls="tier-panel-200" aria-selected="false" tabindex="-1">200<span><svg width="14" height="14" style="display:inline;vertical-align:-1px;color:#CBA258" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></span></button>
+          <button class="tier-btn" type="button" role="tab" id="tier-tab-300" aria-controls="tier-panel-300" aria-selected="false" tabindex="-1">300<span><svg width="14" height="14" style="display:inline;vertical-align:-1px;color:#CBA258" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></span></button>
+          <button class="tier-btn" type="button" role="tab" id="tier-tab-400" aria-controls="tier-panel-400" aria-selected="false" tabindex="-1">400<span><svg width="14" height="14" style="display:inline;vertical-align:-1px;color:#CBA258" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></span></button>
+        </div>
+        <div class="tier-panel" role="tabpanel" id="tier-panel-25" aria-labelledby="tier-tab-25">
+          <img src="assets/images/menu/caffe-latte.svg" alt="A latte in a white cup" loading="lazy">
+          <div class="tier-panel-text">
+            <h3>Customize your drink</h3>
+            <p>Add an extra espresso shot, a dairy alternative or a dash of syrup.</p>
+            <p><strong>25 sample stars</strong></p>
+          </div>
+        </div>
+        <div class="tier-panel" role="tabpanel" id="tier-panel-100" aria-labelledby="tier-tab-100" hidden>
+          <img src="assets/images/menu/butter-croissant.svg" alt="A golden butter croissant" loading="lazy">
+          <div class="tier-panel-text">
+            <h3>Brewed coffee, tea or a bakery item</h3>
+            <p>Pick a hot coffee, a hot tea or a treat from the bakery case.</p>
+            <p><strong>100 sample stars</strong></p>
+          </div>
+        </div>
+        <div class="tier-panel" role="tabpanel" id="tier-panel-200" aria-labelledby="tier-tab-200" hidden>
+          <img src="assets/images/menu/caramel-macchiato.svg" alt="A takeaway caramel macchiato" loading="lazy">
+          <div class="tier-panel-text">
+            <h3>Handcrafted drink or hot breakfast</h3>
+            <p>Choose any handcrafted drink or a warm breakfast item.</p>
+            <p><strong>200 sample stars</strong></p>
+          </div>
+        </div>
+        <div class="tier-panel" role="tabpanel" id="tier-panel-300" aria-labelledby="tier-tab-300" hidden>
+          <img src="assets/images/menu/turkey-pesto-sandwich.svg" alt="A turkey pesto sandwich" loading="lazy">
+          <div class="tier-panel-text">
+            <h3>Sandwich or protein box</h3>
+            <p>Turn your stars into a satisfying lunch.</p>
+            <p><strong>300 sample stars</strong></p>
+          </div>
+        </div>
+        <div class="tier-panel" role="tabpanel" id="tier-panel-400" aria-labelledby="tier-tab-400" hidden>
+          <img src="assets/images/story-reusable.svg" alt="A reusable green tumbler" loading="lazy">
+          <div class="tier-panel-text">
+            <h3>Merchandise or packaged coffee</h3>
+            <p>Pick a bag of coffee beans or a reusable tumbler.</p>
+            <p><strong>400 sample stars</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="benefits-title">Member benefits</h2>
+          <p>Examples of perks a coffee rewards program might include.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></div><h3>Earn stars</h3><p>Collect stars on every sample purchase.</p></div>
+          <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 9h18v4H3zM5 13h14v8H5zM12 9v12M12 9C9 9 7 7.5 8 5.5S12 6 12 9c0-3 3-5.5 4-3.5S15 9 12 9z"/></svg></div><h3>Birthday treat</h3><p>A special reward during your birthday month.</p></div>
+          <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 8h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 2v3M12 2v3"/></svg></div><h3>Free refills</h3><p>Refills on brewed coffee while you stay in store.</p></div>
+          <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Order ahead</h3><p>Skip the line by ordering on your phone.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAR CALCULATOR -->
+    <section class="section section-dark" aria-labelledby="calc-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="calc-title">Star calculator</h2>
+          <p>Move the slider to estimate how many demo stars you would earn. Sample rate: 2 stars per $1.</p>
+        </div>
+        <div class="calculator">
+          <label for="spend-range">Weekly spend: <strong id="spend-value">$20</strong></label>
+          <input type="range" id="spend-range" min="5" max="100" step="5" value="20">
+          <p class="calc-result" id="calc-result" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo theme-house promo-reverse">
+      <div class="promo-text">
+        
+        <h2>Earn stars even quicker</h2>
+        <p>In a real program, linking a payment method or gift card could help you earn faster. Here, it's just a design example.</p>
+        
+        <div class="btn-group">
+          <a class="btn btn-light-outline btn-lg" href="gift-cards.html">Explore gift cards</a>
+        </div>
+      </div>
+      <div class="promo-image">
+        <img src="assets/images/gift-card.svg" alt="A fan of colorful coffee gift cards" loading="lazy" width="1200" height="900">
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-title">Frequently asked questions</h2>
+        </div>
+      <div class="faq">
+        <div class="faq-item">
+          <h3 class="faq-heading">
+            <button class="faq-question" type="button" id="rewards-faq-q0" aria-expanded="false" aria-controls="rewards-faq-a0">
+              Is this a real rewards program? <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer" id="rewards-faq-a0" role="region" aria-labelledby="rewards-faq-q0" hidden>
+            <p>No. Brewhaven Rewards is part of a student demo website. No stars, drinks or prizes are ever awarded.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-heading">
+            <button class="faq-question" type="button" id="rewards-faq-q1" aria-expanded="false" aria-controls="rewards-faq-a1">
+              How would I earn stars? <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer" id="rewards-faq-a1" role="region" aria-labelledby="rewards-faq-q1" hidden>
+            <p>In this sample program you would earn 2 stars for every dollar spent. Try the star calculator above to see an estimate.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-heading">
+            <button class="faq-question" type="button" id="rewards-faq-q2" aria-expanded="false" aria-controls="rewards-faq-a2">
+              Do stars expire? <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer" id="rewards-faq-a2" role="region" aria-labelledby="rewards-faq-q2" hidden>
+            <p>In our sample rules, stars expire 6 months after the month they were earned. Real programs set their own rules.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-heading">
+            <button class="faq-question" type="button" id="rewards-faq-q3" aria-expanded="false" aria-controls="rewards-faq-a3">
+              Is my information saved when I join? <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer" id="rewards-faq-a3" role="region" aria-labelledby="rewards-faq-q3" hidden>
+            <p>No. The demo sign-up form only checks your input in the browser. Nothing is sent to a server or stored.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-heading">
+            <button class="faq-question" type="button" id="rewards-faq-q4" aria-expanded="false" aria-controls="rewards-faq-a4">
+              Can I use rewards at any store? <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer" id="rewards-faq-a4" role="region" aria-labelledby="rewards-faq-q4" hidden>
+            <p>Because this is a demo, there are no real stores. The store locator uses invented sample locations.</p>
+          </div>
+        </div>
+      </div>
+        <div class="btn-group" style="justify-content:center;margin-top:2.5rem">
+          <a class="btn btn-primary btn-lg" href="join-now.html">Join now</a>
+          <a class="btn btn-outline btn-lg" href="sign-in.html">Sign in</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (same on every page) ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h2>About Us</h2>
+          <ul>
+            <li><a href="about.html">Our Company</a></li>
+            <li><a href="coffee.html">Our Coffee</a></li>
+            <li><a href="about.html#story">Our Story</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Social Impact</h2>
+          <ul>
+            <li><a href="about.html#community">Community</a></li>
+            <li><a href="about.html#sourcing">Ethical Sourcing</a></li>
+            <li><a href="about.html#community">Sustainability Goals</a></li>
+            <li><a href="rewards.html">Brewhaven Rewards</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>For Business</h2>
+          <ul>
+            <li><a href="about.html#business">Office Coffee</a></li>
+            <li><a href="gift-cards.html">Corporate Gift Cards</a></li>
+            <li><a href="about.html#business">Catering</a></li>
+            <li><a href="store-locator.html">Find a Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Customer Service</h2>
+          <ul>
+            <li><a href="about.html#contact">Contact Us</a></li>
+            <li><a href="rewards.html#faq">Rewards FAQ</a></li>
+            <li><a href="gift-cards.html#faq">Gift Card FAQ</a></li>
+            <li><a href="menu.html">Menu & Nutrition</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social icons link to the networks' home pages (external sites) -->
+      <ul class="social-links" aria-label="Social media">
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (external site, opens in a new tab)"><img src="assets/images/icons/instagram.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (external site, opens in a new tab)"><img src="assets/images/icons/facebook.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (external site, opens in a new tab)"><img src="assets/images/icons/youtube.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (external site, opens in a new tab)"><img src="assets/images/icons/x-social.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest (external site, opens in a new tab)"><img src="assets/images/icons/pinterest.svg" alt="" width="20" height="20"></a></li>
+      </ul>
+
+      <ul class="legal-links">
+        <li><a href="privacy.html">Privacy Notice</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="privacy.html#accessibility">Accessibility</a></li>
+        <li><button type="button" id="cookie-preferences">Cookie Preferences</button></li>
+      </ul>
+
+      <p class="copyright">&copy; <span id="current-year">2026</span> Brewhaven Coffee Co. &mdash; a fictional brand created for a student web-development project. Not affiliated with any real coffee company.</p>
+    </div>
+  </footer>
+
+  <!-- Small popup message used by main.js -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts: main.js runs on every page; page-specific files come after -->
+  <script src="js/main.js" defer></script>
+  <script src="js/rewards.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Brewhaven Coffee Co. (Demo)</title>
+  <meta name="description" content="About Brewhaven Coffee Co., a fictional coffee brand: our invented story, coffee sourcing, the coffeehouse experience and community ideas.">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+
+  <!-- Google Font: Inter (free, open-source). If it can't load, Arial/Helvetica are used. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Our styles: global first, then responsive overrides -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Lets keyboard users jump straight past the navigation -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Demo notice: reminds visitors this is a student project -->
+  <div class="demo-bar">
+    Student demo project &mdash; Brewhaven Coffee Co. is a fictional brand. No real orders, payments or accounts.
+    <a href="terms.html">Learn more</a>
+  </div>
+
+  <!-- ===================== HEADER (same on every page) ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Brewhaven Coffee Co. home">
+        <img src="assets/images/logo.svg" alt="" width="50" height="50">
+      </a>
+
+      <!-- Hamburger button (visible only on small screens) -->
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="icon-open"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        <span class="icon-close" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul class="nav-links">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="gift-cards.html">Gift Cards</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a class="store-link" href="store-locator.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Find a store</a>
+          <div class="btn-group">
+            <a class="btn btn-dark-outline" href="sign-in.html">Sign in</a>
+            <a class="btn btn-dark" href="join-now.html">Join now</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero theme-cream" aria-labelledby="about-title">
+      <div class="page-hero-text">
+        <span class="eyebrow">About Brewhaven</span>
+        <h1 id="about-title">A fictional coffeehouse, built to learn</h1>
+        <p>Brewhaven Coffee Co. is an invented brand created for a web-development course. Its story below is fiction, written to show how an About page can be structured.</p>
+        <div class="btn-group">
+          <a class="btn btn-primary btn-lg" href="#story">Read our story</a>
+        </div>
+      </div>
+      <div class="page-hero-image">
+        <img src="assets/images/coffeehouse.svg" alt="A warm coffeehouse interior with pendant lights, a menu board and an espresso machine" width="1200" height="900">
+      </div>
+    </section>
+
+    <section class="section" id="story" aria-labelledby="story-title">
+      <div class="container prose">
+        <span class="eyebrow">Our story (fictional)</span>
+        <h2 id="story-title">It started with one small counter</h2>
+        <p>In our made-up story, Brewhaven began as a tiny harbor-side coffee counter where neighbors gathered before work. The idea was simple: serve thoughtfully made coffee in a place that feels welcoming to everyone.</p>
+        <p>As the story goes, that counter grew into a handful of coffeehouses, each with the same goal &mdash; good coffee, friendly people and a comfortable place to pause.</p>
+        <div class="notice notice-info">This company history is invented for the project. We don't publish statistics or claims about real-world impact.</div>
+      </div>
+    </section>
+
+    <section class="promo theme-house" id="sourcing">
+      <div class="promo-text">
+        <span class="eyebrow">Coffee &amp; sourcing</span>
+        <h2>Respect for every bean</h2>
+        <p>Great coffee depends on the farmers who grow it. A responsible coffee company works to pay fairly, support farming communities and protect the land.</p>
+        
+        <div class="btn-group">
+          <a class="btn btn-light-outline btn-lg" href="coffee.html#origins">Explore coffee origins</a>
+        </div>
+      </div>
+      <div class="promo-image">
+        <img src="assets/images/story-farmers.svg" alt="Coffee cherries ripening at a hillside farm" loading="lazy" width="1200" height="900">
+      </div>
+    </section>
+
+    <section class="promo theme-cream promo-reverse" id="experience">
+      <div class="promo-text">
+        <span class="eyebrow">Coffeehouse experience</span>
+        <h2>A third place between home and work</h2>
+        <p>The idea of a 'third place' describes a welcoming spot outside home and work where people can relax and connect. That's the feeling our sample coffeehouses aim for.</p>
+        
+        <div class="btn-group">
+          <a class="btn btn-outline btn-lg" href="store-locator.html">Find a demo store</a>
+        </div>
+      </div>
+      <div class="promo-image">
+        <img src="assets/images/coffeehouse.svg" alt="A warm coffeehouse interior" loading="lazy" width="1200" height="900">
+      </div>
+    </section>
+
+
+    <section class="section" id="community" aria-labelledby="community-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="community-title">Community &amp; sustainability</h2>
+          <p>Ideas a coffee company could focus on. These are examples, not claims about real results.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15zM5 19l8-8"/></svg></div><h3>Less waste</h3><p>Encouraging reusable cups and recycling wherever possible.</p></div>
+          <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c.8-3.5 3.5-5.5 6.5-5.5s5.7 2 6.5 5.5M15.5 14.5c2.8 0 5 1.6 6 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Local connections</h3><p>Opening space for neighborhood groups, artists and events.</p></div>
+          <div class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 8h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 2v3M12 2v3"/></svg></div><h3>Thoughtful sourcing</h3><p>Building long-term relationships with coffee growers.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="careers" aria-labelledby="careers-title">
+      <div class="container prose" style="text-align:center">
+        <h2 id="careers-title">Careers</h2>
+        <p>There are no real jobs at a fictional company &mdash; but a careers section usually explains the culture, benefits and how to apply.</p>
+        <p><a class="btn btn-primary" href="join-now.html">Try the demo sign-up form</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="business" aria-labelledby="business-title">
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2 id="business-title">For business</h2>
+            <p>Office coffee, catering trays and corporate gift cards are common services coffee brands offer to companies. In this demo, they're placeholders to show page structure.</p>
+            <p><a class="btn btn-outline" href="gift-cards.html">See gift card designs</a></p>
+          </div>
+          <div id="contact">
+            <h2>Contact us</h2>
+            <p>This is a student project, so there's no customer service team. For questions about the code, check the project's README file or ask your instructor.</p>
+            <p><a class="btn btn-outline" href="privacy.html">How this demo handles data</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (same on every page) ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h2>About Us</h2>
+          <ul>
+            <li><a href="about.html">Our Company</a></li>
+            <li><a href="coffee.html">Our Coffee</a></li>
+            <li><a href="about.html#story">Our Story</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Social Impact</h2>
+          <ul>
+            <li><a href="about.html#community">Community</a></li>
+            <li><a href="about.html#sourcing">Ethical Sourcing</a></li>
+            <li><a href="about.html#community">Sustainability Goals</a></li>
+            <li><a href="rewards.html">Brewhaven Rewards</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>For Business</h2>
+          <ul>
+            <li><a href="about.html#business">Office Coffee</a></li>
+            <li><a href="gift-cards.html">Corporate Gift Cards</a></li>
+            <li><a href="about.html#business">Catering</a></li>
+            <li><a href="store-locator.html">Find a Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Customer Service</h2>
+          <ul>
+            <li><a href="about.html#contact">Contact Us</a></li>
+            <li><a href="rewards.html#faq">Rewards FAQ</a></li>
+            <li><a href="gift-cards.html#faq">Gift Card FAQ</a></li>
+            <li><a href="menu.html">Menu & Nutrition</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social icons link to the networks' home pages (external sites) -->
+      <ul class="social-links" aria-label="Social media">
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (external site, opens in a new tab)"><img src="assets/images/icons/instagram.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (external site, opens in a new tab)"><img src="assets/images/icons/facebook.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (external site, opens in a new tab)"><img src="assets/images/icons/youtube.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (external site, opens in a new tab)"><img src="assets/images/icons/x-social.svg" alt="" width="20" height="20"></a></li>
+        <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest (external site, opens in a new tab)"><img src="assets/images/icons/pinterest.svg" alt="" width="20" height="20"></a></li>
+      </ul>
+
+      <ul class="legal-links">
+        <li><a href="privacy.html">Privacy Notice</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="privacy.html#accessibility">Accessibility</a></li>
+        <li><button type="button" id="cookie-preferences">Cookie Preferences</button></li>
+      </ul>
+
+      <p class="copyright">&copy; <span id="current-year">2026</span> Brewhaven Coffee Co. &mdash; a fictional brand created for a student web-development project. Not affiliated with any real coffee company.</p>
+    </div>
+  </footer>
+
+  <!-- Small popup message used by main.js -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts: main.js runs on every page; page-specific files come after -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
